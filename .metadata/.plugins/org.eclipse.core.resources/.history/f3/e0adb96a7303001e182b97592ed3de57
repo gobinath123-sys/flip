@@ -1,0 +1,16 @@
+package com.springsecurity;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class SpringsecurityController {
+	@Autowired
+	
+	@GetMapping(value="/getsecurity")
+	public String getmyname() {
+		return "gobi";
+	}
+
+}
